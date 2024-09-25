@@ -12,24 +12,29 @@ document.getElementById('btn-1').addEventListener('click',function(event){
         const remainingBalance = accountBalance - money
         document.getElementById('main-balance').innerText = remainingBalance;
         const p = document.createElement('p');
-    p.innerHTML = ` <div class="hero-content bg-base-200 border rounded-lg border-gray-300 mx-auto mb-10  ">
+    p.innerHTML = ` <div class="p-10 bg-base-200 border rounded-lg border-gray-300 mx-auto mb-10  ">
                                
                                   <div>
                                     <h1 class="text-2xl font-bold"> ${money} Taka is Donated for famine-2024 at Feni, Bangladesh</h1>
                                     <p class="py-6">
-                                      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                                      quasi. In deleniti eaque aut repudiandae et a id nisi.
+                                      Date: ${new Date().toString()}
                                     </p>
                                    
                                   </div>
                                 </div>
                               </div>`
-    document.getElementById('history').appendChild(p)   
-        
+    document.getElementById('history').appendChild(p)  
+    
+  document.getElementById('my_modal_4').classList.remove('hidden')
+  
+  
+
+    
     }
  
     else{
          alert('This amount is not valid')
+         document.getElementById('my_modal_4').classList.add('hidden')
     }    
 })
 
@@ -45,24 +50,25 @@ if(money > 0 && accountBalance >= money){
     const remainingBalance = accountBalance - money
     document.getElementById('main-balance').innerText = remainingBalance;
     const p = document.createElement('p');
-    p.innerHTML = ` <div class="hero-content bg-base-200 border rounded-lg border-gray-300 mx-auto mb-10 ">
+    p.innerHTML = ` <div class="p-10 bg-base-200 border rounded-lg border-gray-300 mx-auto mb-10 ">
                                 
                                  
                                    
                                   <div>
                                     <h1 class="text-2xl font-bold"> ${money}  Taka is Donated for Flood Relief in Noakhali,Bangladesh</h1>
                                     <p class="py-6">
-                                      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                                      quasi. In deleniti eaque aut repudiandae et a id nisi.
+                                        Date: ${new Date().toString()}
                                     </p>
                                    
                                   </div>
                                 </div>
                               </div>`
     document.getElementById('history').appendChild(p)
+    document.getElementById('my_modal_5').classList.remove('hidden')
 }
 else{
     alert('This amount is not valid')
+    document.getElementById('my_modal_5').classList.add('hidden')
 }
 })
 // card-3
@@ -77,26 +83,27 @@ document.getElementById('btn-3').addEventListener('click',function(event){
         const remainingBalance = accountBalance - money
         document.getElementById('main-balance').innerText = remainingBalance;
         const p = document.createElement('p');
-    p.innerHTML = ` <div class="hero-content bg-base-200 border rounded-lg border-gray-300 mx-auto mb-10 ">
-                               
-                                 
-                                   
+    p.innerHTML = ` <div class="p-10 bg-base-200 border rounded-lg border-gray-300 mx-auto mb-10  ">
+  
                                   <div>
                                     <h1 class="text-2xl font-bold"> ${money} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h1>
                                     <p class="py-6">
-                                      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                                      quasi. In deleniti eaque aut repudiandae et a id nisi.
+                                        Date: ${new Date().toString()}
                                     </p>
                                    
                                   </div>
                                 </div>
                               </div>`
     document.getElementById('history').appendChild(p)
+    document.getElementById('my_modal_6').classList.remove('hidden')
+
     }
     else{
-        alert('This amount is not valid')
-    }
+         alert('This amount is not valid')
+ document.getElementById('my_modal_6').classList.add('hidden')
+   }
     })
 
     // ****************
+
      

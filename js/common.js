@@ -1,4 +1,7 @@
-function getInputValueById(id){
+ 
+ 
+//  shared function
+ function getInputValueById(id){
     const inputValue = document.getElementById(id).value;
     const number = parseFloat(inputValue);
     return number
@@ -20,6 +23,8 @@ function showSectionById(id){
     document.getElementById('history').classList.add('hidden');
     document.getElementById(id).classList.remove('hidden')
 }
+
+
 // button related
 
 // color change
@@ -44,3 +49,5 @@ document.getElementById('donation-btn').addEventListener('click',function(){
 document.getElementById('history-btn').addEventListener('click',function(){
     showSectionById('history')
 })
+
+
