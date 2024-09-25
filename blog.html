@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <header class=" bg-[#F9F7F3] pt-2 lg:pt-6 pb-8"  >
+        <!-- navbar start -->
+        <div class="navbar bg-[#F9F7F3] pt-2 lg:pt-6 pb-8  ">
+          <div class="navbar-start pl-0 lg:pl-40">
+              <div>
+                  <button onclick="goToHome()" class="btn p-3 lg:p-0 lg:px-8  text-xs lg:text-xl lg:font-semibold bg-[#B4F461] text-black ">Home</button>
+              </div>
+          </div>
+          <div class="navbar-center  ">
+              <img src="assets/logo.png" alt="">
+            <h1 class=" font-bold pl-2 text-xl text-black">Donate Bangladesh</h1>
+          </div>
+              <div class="navbar-end space-x-1 lg:space-x-4 pr-0 lg:pr-40 ">
+                  <img class=" pl-2 w-8 lg:w-auto" src="assets/coin.png" alt="">
+                  <p class="text-xs lg:text-xl font-medium text-gray-500  "><span id="main-balance">10000</span> BDT</p>
+                </div>
+        </div>
+       
+          <!-- navbar end -->
+    </header>
+    <main class="container mx-auto pt-12">
+        <h1 class="font-extrabold text-4xl mb-10">Important FAQ</h1>
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>
+                The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTMLdocument as a tree of objects. </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p> The getElementById method is used to select an element with a specific id. <br>
+               The getElementsByClassName method returns an array-like collection of elements that match the specified class name. <br>
+                The getElementsByTagName method returns an array-like collection of all elements with the specified tag name, <br>
+                The querySelector and querySelectorAll methods are powerful because they allow you to use any valid CSS selector to select elements. <br>
+                The getElementsByName method returns a collection of elements with a matching name attribute.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of th DOM,and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique in JavaScript and DOM manipulation where you add a single event listener to a parent element to manage events triggered by its child elements.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM? </div>
+            <div class="collapse-content">
+              <p>By using, setAttribute(attributeName, value),getAttribute(attributeName),removeAttribute(attributeName),style,classList. </p>
+            </div>
+          </div>
+     </main>
+     
+      <script>
+        function goToHome(){
+            window.location.href = "index.html"
+        }
+      </script>
 </body>
 </html>
